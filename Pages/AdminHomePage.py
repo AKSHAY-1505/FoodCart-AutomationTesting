@@ -14,5 +14,4 @@ class AdminHomePage(BasePage):
 
 
     def click_on_view_all_foods_button(self):
-        view_all_foods_button = self.get_element(self.VIEW_ALL_FOODS_BUTTON)
-        self.click_on(view_all_foods_button)
+        self.click_on(self.VIEW_ALL_FOODS_BUTTON)

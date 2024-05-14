@@ -16,11 +16,6 @@ class LoginPage(BasePage):
 
 
     def login_with(self, email, password):
-        email_field = self.get_element(self.EMAIL)
-        password_field = self.get_element(self.PASSWORD)
-        login_button = self.get_element(self.LOGIN_BUTTON)
-
-        self.send_to(email_field, email)
-        self.send_to(password_field, password)
-        self.click_on(login_button)
-        time.sleep(5)
+        self.send_to(self.EMAIL, email)
+        self.send_to(self.PASSWORD, password)
+        self.click_on(self.LOGIN_BUTTON)
