@@ -30,10 +30,10 @@ class Test_CustomerFlowScenario(BaseTest):
         self.cart_page.click_on_proceed_to_checkout_button()
 
         self.checkout_page.apply_coupon('COUPON20')
-        # self.checkout_page.assert_coupon_response('Invalid Coupon / Minimum Requirement Not Met')
+        self.checkout_page.assert_coupon_response('Invalid Coupon / Minimum Requirement Not Met')
 
         self.checkout_page.apply_coupon('COUPON150')
-        # self.checkout_page.assert_coupon_response('Coupon Applied Successfully')
+        self.checkout_page.assert_coupon_response('Coupon Applied Successfully')
 
         self.checkout_page.click_on_delivery_address()
         self.checkout_page.click_on_checkout_button()

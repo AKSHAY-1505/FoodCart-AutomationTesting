@@ -29,7 +29,7 @@ class CheckoutPage(BasePage):
 
     def assert_coupon_response(self, expected_text):
         actual_text = self.get_coupon_response_text()
-        assert actual_text == expected_text     #Invalid Coupon / Minimum Requirement Not Met
+        assert actual_text == expected_text
 
     def click_on_delivery_address(self):
         self.click_on(self.DELIVERY_ADDRESS_BUTTON)

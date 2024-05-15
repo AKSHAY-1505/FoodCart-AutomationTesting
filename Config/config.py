@@ -5,3 +5,6 @@ class TestData:
 
     CUSTOMER_EMAIL = "ak@mail.com"
     CUSTOMER_PASSWORD = "111111"
+
+    DELIVERY_AGENT_EMAIL = 'agent1@mail.com'
+    DELIVERY_AGENT_PASSWORD = '111111'
