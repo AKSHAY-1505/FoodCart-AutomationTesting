@@ -9,6 +9,9 @@ from Pages.CheckoutPage import CheckoutPage
 from Pages.AdminHomePage import AdminHomePage
 from Pages.DeliveryAgentHomePage import DeliveryAgentHomePage
 from Pages.AllOrdersPage import AllOrdersPage
+from Database.DatabaseOperations import DatabaseOperations
+from Database.DeliveryAgentAssignments import DeliveryAgentAssignments
+from Database.Orders import Orders
 from Tests.test_base import BaseTest
 
 
@@ -24,6 +27,10 @@ class Test_CustomerFlowScenario(BaseTest):
         self.delivery_agent_page = DeliveryAgentHomePage(self.driver)
         self.all_orders_page = AllOrdersPage(self.driver)
 
+        self.db_operations = DatabaseOperations()
+        self.agent_assignments = DeliveryAgentAssignments()
+        self.orders = Orders()
+
 
         self.customer_home_page.click_on_sign_in_button()
 
@@ -35,7 +42,11 @@ class Test_CustomerFlowScenario(BaseTest):
 
         self.admin_page.choose_first_delivery_agent()
 
+        self.previous_assignments_count = self.agent_assignments.get_agent_assignments_count()
+
         self.admin_page.click_on_assign_delivery_agent_button()
+
+        self.db_operations.assert_agent_assignments_count(self.previous_assignments_count)
 
         self.admin_page.click_on_log_out_button()
 
@@ -56,6 +67,8 @@ class Test_CustomerFlowScenario(BaseTest):
         self.admin_page.click_on_view_all_orders_button()
 
         self.all_orders_page.assert_status('Delivered')
+
+        self.db_operations.assert_status_of_order("delivered")
 
         time.sleep(3)
 

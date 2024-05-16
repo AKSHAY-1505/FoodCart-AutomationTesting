@@ -4,6 +4,9 @@ from Database.MySQLConnection import MySQLConnection
 from Database.Foods import Foods
 from Database.Promotions import Promotions
 from Database.Coupons import Coupons
+from Database.Orderitems import OrderItems
+from Database.Orders import Orders
+from Database.DeliveryAgentAssignments import DeliveryAgentAssignments
 
 
 
@@ -11,6 +14,9 @@ class DatabaseOperations(MySQLConnection):
     foods = Foods()
     promotions = Promotions()
     coupons = Coupons()
+    order_items = OrderItems()
+    orders = Orders()
+    agent_assignments = DeliveryAgentAssignments()
 
     def assert_foods_count(self, previous_count):
         new_count = self.foods.get_foods_count()
@@ -25,4 +31,20 @@ class DatabaseOperations(MySQLConnection):
         new_count = self.coupons.get_coupons_count()
         time.sleep(1)
         assert new_count == previous_count + 2
+
+    def assert_order_items_count(self, previous_count):
+        new_count = self.order_items.get_order_items_count()
+        assert new_count == previous_count + 2
+
+    def assert_orders_count(self,previous_count):
+        new_count = self.orders.get_orders_count()
+        assert new_count == previous_count + 1
+
+    def assert_agent_assignments_count(self,previous_count):
+        new_count = self.agent_assignments.get_agent_assignments_count()
+        assert new_count == previous_count + 1
+
+    def assert_status_of_order(self,status):
+        status_in_db = self.orders.status_of_last_created_order()
+        assert status_in_db == status
 
