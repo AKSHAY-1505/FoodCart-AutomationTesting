@@ -25,12 +25,16 @@ class FoodManagementPage(BasePage):
         self.click_on_create_food_modal_button()
         self.fill_food_name(name)
         self.fill_food_description(description)
-        self.fill_food_price(price)
-        self.fill_food_category()
-        self.upload_image(image_path)
-        self.fill_food_quantity(quantity)
-        self.submit_form()
 
+        self.fill_food_price(price)
+
+        self.fill_food_category()
+
+        self.upload_image(image_path)
+
+        self.fill_food_quantity(quantity)
+
+        self.submit_form()
     def click_on_create_food_modal_button(self):
         self.click_on(self.CREATE_FOOD_MODAL_TRIGGER_BUTTON)
 
