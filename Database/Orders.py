@@ -23,3 +23,13 @@ class Orders(MySQLConnection):
         time.sleep(1)
         db.close()
         return count
+
+    def get_order_items(self):
+        time.sleep(1)
+        db = self.connect_to_db()
+        db_cursor = db.cursor()
+        db_cursor.execute("SELECT f.name FROM order_items oi JOIN foods f ON oi.food_id = f.id ORDER BY oi.updated_at DESC LIMIT 2;")
+        result = db_cursor.fetchall()
+        time.sleep(1)
+        db.close()
+        return result

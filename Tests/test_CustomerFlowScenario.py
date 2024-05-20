@@ -52,9 +52,14 @@ class Test_CustomerFlowScenario(BaseTest):
         self.checkout_page.click_on_delivery_address()
 
         previous_orders_count = self.orders.get_orders_count()
+
         self.checkout_page.click_on_checkout_button()
+
         self.db_operations.assert_orders_count(previous_orders_count)
-        time.sleep(5)
+
+        self.db_operations.assert_foods_in_order('Test Food 3','Test Food 2')
+
+        time.sleep(2)
 
 
 

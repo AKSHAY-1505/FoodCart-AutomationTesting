@@ -28,8 +28,8 @@ class DatabaseOperations(MySQLConnection):
         assert new_count == previous_count + 2
 
     def assert_coupons_count(self, previous_count):
+        time.sleep(2)
         new_count = self.coupons.get_coupons_count()
-        time.sleep(1)
         assert new_count == previous_count + 2
 
     def assert_order_items_count(self, previous_count):
@@ -47,4 +47,13 @@ class DatabaseOperations(MySQLConnection):
     def assert_status_of_order(self,status):
         status_in_db = self.orders.status_of_last_created_order()
         assert status_in_db == status
+
+    def assert_foods_in_order(self,food1, food2):
+        food_items = self.orders.get_order_items()
+        list = []
+        for tup in food_items:
+            list.append(tup[0])
+        assert food1 in list
+        assert food2 in list
+
 

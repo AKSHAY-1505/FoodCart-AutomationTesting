@@ -42,7 +42,7 @@ class Test_AdminFlowScenario(BaseTest):
         self.previous_foods_count = self.foods.get_foods_count()
         for i in range(4):
             price = 100 * (i+1)
-            self.food_management_page.create_new_food(f"Test Food {i}",'Demo Description 1', price,'/Users/akbalamurugan/Desktop/selenium/burger1.jpg',10)
+            self.food_management_page.create_new_food(f"Test Food {i}",'Demo Description 1', price,'/home/akshay/Desktop/Akshay/FoodCart-AutomationTesting/assets/burger1.jpg',10)
         self.db_operations.assert_foods_count(self.previous_foods_count)
 
         self.previous_promotions_count = self.promotions.get_promotions_count()

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c874a71-3d80-4722-bfc9-ea1868598309" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/FoodCartAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FoodCartAutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Coupons.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Coupons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/DatabaseOperations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseOperations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_AdminFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_AdminFlowScenario.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_CustomerFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_CustomerFlowScenario.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_DeliveryAgentFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_DeliveryAgentFlowScenario.py" afterDir="false" />
     </list>
@@ -43,7 +48,8 @@
     "Python tests.Python tests for test_CustomerFlowScenario.Test_CustomerFlowScenario.executor": "Debug",
     "Python tests.Python tests for test_CustomerFlowScenario.Test_CustomerFlowScenario.test_scenario.executor": "Debug",
     "Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario.executor": "Debug",
-    "Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario.test_scenario.executor": "Debug",
+    "Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario.test_scenario.executor": "Run",
+    "Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_DeliveryAgentFlowScenario.executor": "Debug",
     "Python.CustomerHomePage.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -58,7 +64,7 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario.test_scenario">
+  <component name="RunManager" selected="Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_DeliveryAgentFlowScenario">
     <configuration name="Python tests for test_AdminFlowScenario.Test_AdminFlowScenario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FoodCartAutomation" />
       <option name="ENV_FILES" value="" />
@@ -71,21 +77,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_AdminFlowScenario.Test_AdminFlowScenario&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_AdminFlowScenario.Test_AdminFlowScenario.test_scenario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="FoodCartAutomation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_AdminFlowScenario.Test_AdminFlowScenario.test_scenario&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -134,20 +125,35 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_DeliveryAgentFlowScenario.Test_DeliveryAgentFlowScenario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FoodCartAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_DeliveryAgentFlowScenario.Test_DeliveryAgentFlowScenario&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_DeliveryAgentFlowScenario" />
         <item itemvalue="Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario.test_scenario" />
         <item itemvalue="Python tests.Python tests for test_DeliveryAgentFlowScenario.Test_CustomerFlowScenario" />
         <item itemvalue="Python tests.Python tests for test_CustomerFlowScenario.Test_CustomerFlowScenario" />
         <item itemvalue="Python tests.Python tests for test_AdminFlowScenario.Test_AdminFlowScenario" />
-        <item itemvalue="Python tests.Python tests for test_AdminFlowScenario.Test_AdminFlowScenario.test_scenario" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -161,16 +167,5 @@
       <updated>1715682198025</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Database/DatabaseOperations.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

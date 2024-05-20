@@ -15,7 +15,7 @@ from Database.Orders import Orders
 from Tests.test_base import BaseTest
 
 
-class Test_CustomerFlowScenario(BaseTest):
+class Test_DeliveryAgentFlowScenario(BaseTest):
 
     def test_scenario(self):
         # Pages
@@ -68,7 +68,7 @@ class Test_CustomerFlowScenario(BaseTest):
 
         self.all_orders_page.assert_status('Delivered')
 
-        self.db_operations.assert_status_of_order("delivered")
+        self.db_operations.assert_status_of_order(3)
 
         time.sleep(3)
 
