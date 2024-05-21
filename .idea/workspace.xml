@@ -8,12 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/FoodCartAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FoodCartAutomation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/Coupons.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Coupons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/DatabaseOperations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/DatabaseOperations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/Orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Orders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_AdminFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_AdminFlowScenario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_CustomerFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_CustomerFlowScenario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_DeliveryAgentFlowScenario.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_DeliveryAgentFlowScenario.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/akbalamurugan/Desktop/Final Project/Demo/FoodCartAutomation/Database",
+    "last_opened_file_path": "/Users/akbalamurugan/Desktop/Final Project/Demo/FoodCartAutomation",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -153,7 +148,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
